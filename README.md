@@ -25,7 +25,7 @@ Le fichier `strings.xml` contient les configurations Firebase nécessaires :
 Puisque la méthode `Password()` n'est pas appelée par l'application, nous utilisons **Frida** pour forcer son exécution en mémoire (Hooking).
 
 ### Explication du Script (`frida_firestorm.js`)
-```javascript
+
 Java.perform(function() {
     // On attend que l'application soit totalement chargée
     setTimeout(function() {
@@ -74,12 +74,12 @@ Frida & Frida-Server : Hooking et manipulation de la mémoire.
 ADB (Android Debug Bridge) : Installation et communication avec l'émulateur.
 
 Python 3 : Scripting pour l'extraction finale des données.
-
 #les captures
 <img width="821" height="659" alt="Screenshot 2026-04-15 200700" src="https://github.com/user-attachments/assets/3fdd60c6-7c44-45e4-b495-403e0a71f689" />
 <img width="868" height="398" alt="Screenshot 2026-04-15 201336" src="https://github.com/user-attachments/assets/1cc715b6-3e54-4beb-831a-1e3fec2d0b60" />
 <img width="956" height="146" alt="Screenshot 2026-04-15 203537" src="https://github.com/user-attachments/assets/b068c5fc-676a-474d-9c74-3d2720014c7a" />
 <img width="762" height="215" alt="Screenshot 2026-04-15 204653" src="https://github.com/user-attachments/assets/5411bf15-b95f-40b0-832c-58df6817d9cc" />
+
 
 
 
