@@ -44,7 +44,7 @@ Résultat : Le script nous a permis d'extraire le mot de passe dynamique suivant
 
 C7_dotpsC7t7f_._In_i.IdttpaofoaIIdIdnndIfC
 
-4. Exploitation Finale (Python)
+## 4. Exploitation Finale (Python)
 Une fois le mot de passe récupéré, nous avons automatisé la connexion à la base de données Firebase via un script Python utilisant pyrebase4.
 
 Fonctionnement du script get_flag.py :
@@ -54,7 +54,7 @@ Authentification : Envoie l'email statique et le mot de passe dynamique (extrait
 
 Extraction : Une fois authentifié, le script interroge la Realtime Database pour lire la valeur du Flag.
 
-5. Analyse du Flag Obtenu
+## 5. Analyse du Flag Obtenu
 Flag : PWNSEC{C0ngr4ts_Th4t_w45_4N_345y_P4$$w0rd_t0_G3t!!!_0R_!5_!t???}
 
 Signification technique :
@@ -66,7 +66,7 @@ La logique de protection native (le secret dans .so) a été contournée grâce 
 
 Le développeur pensait sécuriser l'accès en ne reliant pas la fonction au bouton, mais l'instrumentation dynamique permet de passer outre cette absence de lien logique.
 
-6. Outils Utilisés
+## 6. Outils Utilisés
 JADX-GUI : Analyse statique du code Java.
 
 Frida & Frida-Server : Hooking et manipulation de la mémoire.
@@ -74,7 +74,9 @@ Frida & Frida-Server : Hooking et manipulation de la mémoire.
 ADB (Android Debug Bridge) : Installation et communication avec l'émulateur.
 
 Python 3 : Scripting pour l'extraction finale des données.
-#les captures
+
+## les captures
+
 <img width="821" height="659" alt="Screenshot 2026-04-15 200700" src="https://github.com/user-attachments/assets/3fdd60c6-7c44-45e4-b495-403e0a71f689" />
 <img width="868" height="398" alt="Screenshot 2026-04-15 201336" src="https://github.com/user-attachments/assets/1cc715b6-3e54-4beb-831a-1e3fec2d0b60" />
 <img width="956" height="146" alt="Screenshot 2026-04-15 203537" src="https://github.com/user-attachments/assets/b068c5fc-676a-474d-9c74-3d2720014c7a" />
